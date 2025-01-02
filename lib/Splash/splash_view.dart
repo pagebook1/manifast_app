@@ -1,30 +1,28 @@
-// ----------------------------------------------------------------------
-// SPLASH PAGE
-// ----------------------------------------------------------------------
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
-
 import 'splash_controller.dart';
 
-class SplashPage extends GetView<SplashController> {
-  const SplashPage({super.key});
+class SplashPage extends StatelessWidget {
+  final SplashController controller = Get.find<SplashController>();
+
+  SplashPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.deepPurple.shade50,
+      backgroundColor: Colors.deepPurple,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             // Lottie animation
             SizedBox(
-              width: 120,
-              height: 120,
+              width: 250,
+              height: 250,
               child: Lottie.asset(
-                'assets/lottie/meditation.json',
-                fit: BoxFit.contain,
+                'assets/animations/meditation.json', // Ensure the path is correct
+                fit: BoxFit.fill,
               ),
             ),
             const SizedBox(height: 16),
@@ -33,13 +31,17 @@ class SplashPage extends GetView<SplashController> {
               style: TextStyle(
                 fontSize: 36,
                 fontWeight: FontWeight.bold,
-                color: Colors.deepPurple.shade800,
+                color: Colors.deepPurple.shade50,
               ),
             ),
             const SizedBox(height: 8),
-            const Text(
-              'Open your mind to possibilities...',
-              style: TextStyle(fontSize: 16, fontStyle: FontStyle.italic),
+
+            Text(
+              'Manifest your dreams into reality',
+              style: TextStyle(
+                fontSize: 16,
+                color: Colors.deepPurple.shade50,
+              ),
             ),
           ],
         ),

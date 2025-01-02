@@ -1,0 +1,31 @@
+flavors:
+  dev:
+    app:
+      name: "Manifast Dev"
+    android:
+      applicationId: "com.lindahill.manifastdev"
+    firebase:
+      web:
+        config:
+          apiKey: "AIzaSyBhX3wiSCXovbBxpu05MPtJfiOEzIQ40gM"
+          authDomain: "manifastdev.firebaseapp.com"
+          projectId: "manifastdev"
+          storageBucket: "manifastdev.firebasestorage.app"
+          messagingSenderId: "975507983113"
+          appId: "1:975507983113:web:7deccfc45ebfeab0dae1d8"
+
+  staging:
+    app:
+      name: "Manifast"
+    android:
+      applicationId: "com.lindahill.manifast"
+    firebase:
+      web:
+        config:
+          apiKey: "AIzaSyA70LgRA0jyNnYLxCn80Z28IZHCH5Uavec"
+          authDomain: "manifast-7c037.firebaseapp.com"
+          projectId: "manifast-7c037"
+          storageBucket: "manifast-7c037.firebasestorage.app"
+          messagingSenderId: "689964585129"
+          appId: "1:689964585129:web:8633a40216f0d760c759b8"
+          measurementId: "G-0L7V61LMFC"

@@ -1,20 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:manifast_app/layout/drawer.dart';
+import 'package:manifast_app/layout/menu.dart';
 
 import 'manifest_controller.dart';
 
-class ManifestPage extends GetView<ManifestController> {
-  const ManifestPage({super.key});
+class ManifestPage extends StatelessWidget {
+  final controller = Get.find<ManifestController>();
+  ManifestPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     final TextEditingController manifestInputController =
         TextEditingController();
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Manifest Something"),
-        centerTitle: true,
-      ),
+      appBar: appBarLayout(),
+      drawer: Menus(),
       body: Container(
         width: double.infinity,
         height: double.infinity,

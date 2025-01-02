@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:manifast_app/layout/menu.dart';
 
 class ReferralPage extends StatelessWidget {
   const ReferralPage({super.key});
@@ -6,10 +7,7 @@ class ReferralPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Referrals"),
-        centerTitle: true,
-      ),
+      appBar: appBarLayout(),
       body: Container(
         width: double.infinity,
         height: double.infinity,

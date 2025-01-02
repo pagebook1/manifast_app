@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "manifast dev",
+            "command": "make run_dev",
+            "type": "node-terminal",
+            "request": "launch",
+        },
+        {
+            "name": "manifast staging",
+            "command": "make run_staging",
+            "type": "node-terminal",
+            "request": "launch",
+           
+        }
+    ]
+}

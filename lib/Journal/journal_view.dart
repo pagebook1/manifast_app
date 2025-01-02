@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:manifast_app/layout/drawer.dart';
+import 'package:manifast_app/layout/menu.dart';
 
 class JournalPage extends StatelessWidget {
   const JournalPage({super.key});
@@ -6,10 +8,8 @@ class JournalPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Journal"),
-        centerTitle: true,
-      ),
+      appBar: appBarLayout(),
+      drawer: Menus(),
       body: Container(
         width: double.infinity,
         height: double.infinity,
