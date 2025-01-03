@@ -48,7 +48,7 @@ class App extends StatelessWidget {
         ),
         inputDecorationTheme: InputDecorationTheme(
           filled: true,
-          fillColor: Colors.deepPurple,
+          fillColor: Color.fromARGB(255, 241, 241, 241),
           labelStyle: const TextStyle(color: Colors.black),
           hintStyle: const TextStyle(color: Colors.black54),
           border: OutlineInputBorder(

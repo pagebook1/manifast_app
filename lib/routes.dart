@@ -53,12 +53,12 @@ class Pages {
     ),
     GetPage(
       name: Routes.shop,
-      page: () => const ShopPage(),
+      page: () => ShopPage(),
       transition: Transition.cupertino,
     ),
     GetPage(
       name: Routes.journal,
-      page: () => const JournalPage(),
+      page: () => JournalPage(),
       transition: Transition.cupertino,
     ),
 

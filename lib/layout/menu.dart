@@ -3,7 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:manifast_app/flavors.dart';
 
-AppBar appBarLayout() {
+AppBar appBarLayout({String title = ''}) {
   // final themeModeController = Get.find<ThemeModeController>();
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
       // statusBarColor: Colors.teal,
@@ -15,15 +15,16 @@ AppBar appBarLayout() {
       builder: (context) => IconButton(
         icon: const Icon(
           Icons.menu,
+          color: Colors.white,
         ),
         // splashRadius: 1,
 
         onPressed: () => Scaffold.of(context).openDrawer(),
       ),
     ),
-    actions: [
-      const Padding(
-        padding: const EdgeInsets.only(right: 16.0),
+    actions: const [
+      Padding(
+        padding: EdgeInsets.only(right: 16.0),
         child: CircleAvatar(
           backgroundImage: AssetImage(
               'assets/images/profile.jpg'), // Ensure the path is correct
@@ -35,11 +36,11 @@ AppBar appBarLayout() {
     elevation: 5,
     // shadowColor: Colors.black,
     title: Text(
-      F.title.toUpperCase(),
+      title == '' ? F.title : title,
       style: GoogleFonts.fredoka(
         textStyle: const TextStyle(
           color: Colors.white,
-          fontWeight: FontWeight.bold,
+          fontWeight: FontWeight.normal,
           letterSpacing: 1.5,
           fontSize: 20,
         ),

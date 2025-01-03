@@ -45,16 +45,15 @@ class Menus extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 // Profile
-                Row(
+                const Row(
                   children: [
                     CircleAvatar(
                       radius: 32,
-                      backgroundColor: Colors.white.withOpacity(0.2),
-                      child: const Icon(Icons.person,
-                          size: 36, color: Colors.white),
+                      backgroundImage: AssetImage(
+                          'assets/images/profile.jpg'), // Ensure the path is correct
                     ),
                     const SizedBox(width: 12),
-                    const Text(
+                    Text(
                       "Hello, Josh Doe",
                       style: TextStyle(
                         color: Colors.white,
